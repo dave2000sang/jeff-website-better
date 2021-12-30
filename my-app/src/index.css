@@ -1,0 +1,85 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  /* overflow: hidden; */
+}
+
+.mynav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  background-color: #f1f1f1;
+  height: 100%;
+  /* Full height */
+  /* position: fixed; */
+  /* Make it stick, even on scroll */
+  /* overflow: auto; */
+  /* Enable scrolling if the sidenav has too much content */
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+
+
+/* Images CSS */
+.row {
+  display: flex;
+  /* flex-wrap: wrap; */
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: "5%";
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
+
+/* carousel */
+.carousel {
+  width: 80vw;
+  /* height: 500px; */
+  /* background-color: #ff0000; */
+  overflow-x: scroll;
+  white-space:nowrap;
+}
+
+.carousel .slide {
+  display: inline-block;
+  border: #000;
+}
+
+.picture {
+  width: auto;
+  height: 500px; /*to preserve the aspect ratio of the image*/
+}
+
+
+.carousel::-webkit-scrollbar {
+  height: 6px;               /* width of the entire scrollbar */
+}
+
+
+.carousel::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0);    /* color of the scroll thumb */
+}
