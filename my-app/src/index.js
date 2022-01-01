@@ -3,12 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Navbar from './components/Navbar'
 
-const mainPortfolioBody = {
-  margin: "auto",
-  // width: "100%",
-  border: "3px solid green",
-  padding: "50px"
-}
 
 class HomePage extends React.Component {
   render() {
@@ -51,14 +45,12 @@ class HomePage extends React.Component {
       },
     ];
     return (
-      <div style={mainPortfolioBody}>
-        <div className="carousel">
-          {itemData.map((item) => (
-            <div className="slide">
-              <img src={item.img} className="picture"></img>
-            </div>
-          ))}
-        </div>
+      <div className="carousel" id="carouselWrapper">
+        {itemData.map((item) => (
+          <div className="slide">
+            <img src={item.img} className="picture"></img>
+          </div>
+        ))}
       </div>
     );
   }
@@ -67,11 +59,11 @@ class HomePage extends React.Component {
 class App extends React.Component {
   render() {
     return (
-      <div className="app-wrapper">
-        <div style={{display: "inline-block"}}>
+      <div id="app-wrapper">
+        <div style={{display: "inline-block", verticalAlign: "top"}}>
           <Navbar/>
         </div>
-        <div style={{display: "inline-block"}}>
+        <div style={{display: "inline-block", verticalAlign: "top", paddingTop:"3.5rem", position:"absolute"}}>
           <HomePage />
         </div>
       </div>
