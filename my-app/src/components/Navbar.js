@@ -1,27 +1,26 @@
 import React from 'react';
+import {  Link } from "react-router-dom";
+
 class Navbar extends React.Component {
 	render() {
 		return (
 			<header>
 				<h2>
-					<a href="/">
+					<Link to="/">
 						Jeffery Sang
-					</a>
+					</Link>
 				</h2>
 				<div>
 					<nav className="nav-bar" role="navigation">
 						<ul className="mynav-list">
 							<li>
-								<a href="pages/fashion.html">Fashion</a>
+								<Link to="/projects">Projects</Link>
 							</li>
 							<li>
-								<a href="pages/fine_art.html">Fine Art</a>
+								<Link to="/contact">Contact</Link>
 							</li>
 							<li>
-								<a href="pages/contact.html">Contact</a>
-							</li>
-							<li>
-								<a href="pages/about.html">About</a>
+								<Link to="/about">About</Link>
 							</li>
 						</ul>
 					</nav>
